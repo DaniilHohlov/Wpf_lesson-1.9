@@ -147,7 +147,7 @@ namespace Wpf_1._9
             double koef = (double)(maxEquity - minEquity) / _canvas.ActualHeight;
 
             double x1 = 0;
-            double y1 = 0;
+            double y1 = _canvas.ActualHeight - (double)(listEquity.Min() - minEquity) / koef; ;
 
             for (int i = 0; i < count; i++)
             {
